@@ -10,8 +10,8 @@ st.set_page_config(
 )
 
 # Load Model and Scaler
-model = pickle.load(open("models/loan_model.pkl", "rb"))
-scaler = pickle.load(open("models/scaler.pkl", "rb"))
+model = pickle.load(open("loan_model.pkl", "rb"))
+scaler = pickle.load(open("scaler.pkl", "rb"))
 
 # Title
 st.title("🏦 Loan Approval Prediction System")
