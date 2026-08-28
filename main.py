@@ -81,7 +81,7 @@ def predict_loan(data: LoanApplication):
     # Prediction
     prediction = model.predict(scaled_data)[0]
 
-    if prediction == 1:
+    if prediction == 0:
         result = "Loan Approved"
     else:
         result = "Loan Rejected"
